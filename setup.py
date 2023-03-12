@@ -7,7 +7,6 @@ def get_requirements(file_path):
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
         requirements = [req.replace("\n", " ") for req in requirements]
-         
         if var in requirements:
             requirements.remove(var)
     
